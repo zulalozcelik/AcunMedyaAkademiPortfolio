@@ -12,6 +12,8 @@ namespace AcunMedyaAkademiPortfolio.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DbPortfolioEntities : DbContext
     {
@@ -38,5 +40,15 @@ namespace AcunMedyaAkademiPortfolio.Models
         public virtual DbSet<TblService> TblService { get; set; }
         public virtual DbSet<TblSkills> TblSkills { get; set; }
         public virtual DbSet<TblTestimonial> TblTestimonial { get; set; }
+    
+        public virtual int GetLastSkillTitle()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("GetLastSkillTitle");
+        }
+    
+        public virtual ObjectResult<string> GetLastSkillTitlee()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("GetLastSkillTitlee");
+        }
     }
 }

@@ -135,6 +135,7 @@
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\SkillsController.cs" />
+    <Compile Include="Controllers\StatisticController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -389,6 +390,9 @@
     <Content Include="Views\Skills\SkillsList.cshtml" />
     <Content Include="Views\Skills\CreateSkill.cshtml" />
     <Content Include="Views\Skills\UpdateSkill.cshtml" />
+    <Content Include="Views\Testimonial\CreateTestimoial.cshtml" />
+    <Content Include="Views\Testimonial\UpdateTestimonial.cshtml" />
+    <Content Include="Views\Statistic\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

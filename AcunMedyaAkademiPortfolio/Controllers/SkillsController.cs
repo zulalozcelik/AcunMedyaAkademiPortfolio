@@ -34,10 +34,24 @@ namespace AcunMedyaAkademiPortfolio.Controllers
             db.SaveChanges();
             return RedirectToAction("SkillsList");
         }
+        [HttpGet]
         public ActionResult UpdateSkill(int id)
         {
             var value = db.TblSkills.Find(id);
             return View(value);
         }
+
+        [HttpPost]
+        public ActionResult UpdateSkill(TblSkills p)
+        {
+            var value = db.TblSkills.Find(p.SkillId);
+            value.Title = p.Title;
+            value.Value = p.Value;
+            value.LastWeekValue = p.LastWeekValue;
+            value.LastMonthValue = p.LastMonthValue;
+            db.SaveChanges();
+            return RedirectToAction("SkillList");
+        }
+
     }
 }
