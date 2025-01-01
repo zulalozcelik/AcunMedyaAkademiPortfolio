@@ -52,6 +52,5 @@ namespace AcunMedyaAkademiPortfolio.Controllers
             db.SaveChanges();
             return RedirectToAction("SkillList");
         }
-
     }
 }
