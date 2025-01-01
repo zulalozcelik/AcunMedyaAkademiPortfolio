@@ -1,0 +1,19 @@
+﻿@model AcunMedyaAkademiPortfolio.Models.TblAbout
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>UpdateAbout</h2>
+
+<form method="post">
+    <label>Hakkında Id'si'</label>
+    <input type="text" class="form-control" name="AboutId" value="@Model.AboutId" />
+    <label>Hakkında Başlığı</label>
+    <input type="text" class="form-control" name="Title" value="@Model.Title" />
+    <label>Hakkında Açıklaması</label>
+    <input type="text" class="form-control" name="Description" value="@Model.Description" />
+    <label>Hakkında Resmi</label>
+    <input type="text" class="form-control" name="ImageUrl" value="@Model.ImageUrl" />
+    <button class="btn btn-info">Hakkındayı Kaydet</button>
+</form>

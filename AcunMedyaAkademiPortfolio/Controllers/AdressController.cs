@@ -45,7 +45,7 @@ namespace AcunMedyaAkademiPortfolio.Controllers
         public ActionResult UpdateAdress(TblAdress p)
         {
             var value = db.TblAdress.Find(p.AdressId);
-            value.Adress=p.Adress;
+            value.Adress = p.Adress;
             value.Phone = p.Phone;
             value.Email = p.Email;
             value.Website = p.Website;

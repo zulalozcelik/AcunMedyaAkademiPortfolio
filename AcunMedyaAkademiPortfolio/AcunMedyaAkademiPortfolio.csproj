@@ -399,10 +399,12 @@
     <Content Include="Views\Testimonial\CreateTestimoial.cshtml" />
     <Content Include="Views\Testimonial\UpdateTestimonial.cshtml" />
     <Content Include="Views\Statistic\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\CreateAbout.cshtml" />
+    <Content Include="Views\About\UpdateAbout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\About\" />
     <Folder Include="Views\Adress\" />
     <Folder Include="Views\Banner\" />
     <Folder Include="Views\Feature\" />
