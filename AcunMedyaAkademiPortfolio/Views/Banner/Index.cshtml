@@ -1,9 +1,10 @@
-﻿@Model List<using AcunMedyaAkademiPortfolio.Models.TblAbout>
+﻿@Model List<using AcunMedyaAkademiPortfolio.Models.TblBanner>
     @{
         ViewBag.Title = "Index";
         Layout = "~/Views/AdminLayout/Index.cshtml";
     }
 
+    <h2>Index</h2>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
@@ -16,15 +17,15 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.AboutId</td>
+                <td>@item.BannerId</td>
                 <td>@item.Title</td>
                 <td>@item.Description</td>
                 <td>@item.ImageUrl</td>
-                <td><a href="/About/UpdateAbout/@item.AboutId" class="btn btn-warning"> Güncelle</a></td>
-                <td><a href="/About/DeleteAbout/@item.AboutId" class="btn btn-danger"> Sil</a></td>
+                <td><a href="/Banner/CreateBanner/@item.BannerId" class="btn btn-warning"> Güncelle</a></td>
+                <td><a href="/Banner/CreateBanner/@item.BannerId" class="btn btn-danger"> Sil</a></td>
             </tr>
         }
 
     </table>
 
-    <td><a href="/About/CreateAbout"class="btn btn-success">Yeni Hakkında Ekle</a></td>
+    <td><a href="/Banner/CreateBanner/"class="btn btn-success">Yeni Afiş Ekle</a></td>

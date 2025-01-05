@@ -38,7 +38,7 @@
           <Key>
             <PropertyRef Name="BannerId" />
           </Key>
-          <Property Name="BannerId" Type="int" Nullable="false" />
+          <Property Name="BannerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Title" Type="varchar" MaxLength="50" />
           <Property Name="Description" Type="varchar" MaxLength="120" />
           <Property Name="ImageUrl" Type="varchar" MaxLength="50" />
@@ -82,7 +82,7 @@
           <Key>
             <PropertyRef Name="ProfileId" />
           </Key>
-          <Property Name="ProfileId" Type="int" Nullable="false" />
+          <Property Name="ProfileId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="varchar" MaxLength="30" />
           <Property Name="Birthday" Type="date" />
           <Property Name="Adress" Type="varchar" MaxLength="50" />

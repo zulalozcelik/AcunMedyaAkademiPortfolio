@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "CreateBanner";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<form method="post">
+    <label>Başlık</label>
+    <input type="text" class="form-control" name="Title" />
+
+    <label>Açıklama</label>
+    <input type="text" class="form-control" name="Description" />
+
+    <label>Afiş Resmi</label>
+    <input type="text" class="form-control" name="ImageUrl" />
+
+    <br /><br />
+    <button class="btn btn-info">Afişi Kaydet</button>
+</form>

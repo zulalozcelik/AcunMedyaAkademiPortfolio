@@ -1,0 +1,18 @@
+﻿@model AcunMedyaAkademiPortfolio.Models.TblFeature
+@{
+    ViewBag.Title = "UpdateFeature";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<h2>Özellik Güncelleme</h2>
+
+<form method="post">
+    <label>Özellik ID</label>
+    <input type="text" class="form-control" name="FeatureId" value="@Model.FeatureId" />
+    <label>Başlık</label>
+    <input type="text" class="form-control" name="FeatureTitle" value="@Model.FeatureTitle" />
+    <label>Alt Başlık</label>
+    <input type="text" class="form-control" name="FeatureSubtitle" value="@Model.FeatureSubtitle" />
+    <label>Resim</label>
+    <input type="text" class="form-control" name="FeatureImageUrl" value="@Model.FeatureImageUrl" />
+    <button class="btn btn-info">Özelliği Kaydet</button>
+</form>

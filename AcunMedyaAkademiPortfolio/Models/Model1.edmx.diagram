@@ -8,7 +8,7 @@
         <EntityTypeShape EntityType="DbPortfolioModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolioModel.TblAbout" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolioModel.TblAdress" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbPortfolioModel.TblBanner" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbPortfolioModel.TblBanner" Width="1.5" PointX="5.375" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolioModel.TblCategory" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolioModel.TblContact" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolioModel.TblFeature" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
