@@ -22,7 +22,7 @@
           <Property Name="AboutId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Description" Type="varchar" MaxLength="150" />
           <Property Name="Title" Type="varchar" MaxLength="30" />
-          <Property Name="ImageUrl" Type="varchar" MaxLength="150" />
+          <Property Name="ImageUrl" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="TblAdress">
           <Key>
@@ -41,7 +41,7 @@
           <Property Name="BannerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Title" Type="varchar" MaxLength="50" />
           <Property Name="Description" Type="varchar" MaxLength="120" />
-          <Property Name="ImageUrl" Type="varchar" MaxLength="50" />
+          <Property Name="ImageUrl" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="TblCategory">
           <Key>
@@ -68,14 +68,14 @@
           <Property Name="FeatureId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="FeatureTitle" Type="varchar" MaxLength="50" />
           <Property Name="FeatureSubtitle" Type="varchar" MaxLength="30" />
-          <Property Name="FeatureImageUrl" Type="varchar" MaxLength="150" />
+          <Property Name="FeatureImageUrl" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="TblHobby">
           <Key>
             <PropertyRef Name="HobbyId" />
           </Key>
           <Property Name="HobbyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="IconUrl" Type="varchar" MaxLength="50" />
+          <Property Name="IconUrl" Type="varchar(max)" />
           <Property Name="Title" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="TblProfile">
@@ -95,7 +95,7 @@
           </Key>
           <Property Name="ProjectId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ProjectName" Type="varchar" MaxLength="30" />
-          <Property Name="ProjectImageUrl" Type="varchar" MaxLength="150" />
+          <Property Name="ProjectImageUrl" Type="varchar(max)" />
           <Property Name="ProjectCategory" Type="int" />
         </EntityType>
         <EntityType Name="TblService">
@@ -105,7 +105,7 @@
           <Property Name="ServiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Title" Type="varchar" MaxLength="20" />
           <Property Name="Description" Type="varchar" MaxLength="50" />
-          <Property Name="IconUrl" Type="varchar" MaxLength="50" />
+          <Property Name="IconUrl" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="TblSkills">
           <Key>
@@ -117,6 +117,15 @@
           <Property Name="LastWeekValue" Type="tinyint" />
           <Property Name="LastMonthValue" Type="tinyint" />
         </EntityType>
+        <EntityType Name="TblSocialMedia">
+          <Key>
+            <PropertyRef Name="SocialMedia_ID" />
+          </Key>
+          <Property Name="SocialMedia_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SocialMediaName" Type="nvarchar" MaxLength="50" />
+          <Property Name="SocialMediaIcon" Type="nvarchar(max)" />
+          <Property Name="SocialMediaUrl" Type="nvarchar(max)" />
+        </EntityType>
         <EntityType Name="TblTestimonial">
           <Key>
             <PropertyRef Name="TestimonialId" />
@@ -125,7 +134,7 @@
           <Property Name="TestimonialName" Type="varchar" MaxLength="30" />
           <Property Name="TestimonialTitle" Type="varchar" MaxLength="30" />
           <Property Name="TestimonialDescription" Type="varchar" MaxLength="100" />
-          <Property Name="TestimonialImageUrl" Type="varchar" MaxLength="150" />
+          <Property Name="TestimonialImageUrl" Type="varchar(max)" />
         </EntityType>
         <Association Name="FK_TblProject_TblCategory">
           <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
@@ -154,6 +163,7 @@
           <EntitySet Name="TblProject" EntityType="Self.TblProject" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblService" EntityType="Self.TblService" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblSkills" EntityType="Self.TblSkills" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblSocialMedia" EntityType="Self.TblSocialMedia" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblTestimonial" EntityType="Self.TblTestimonial" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_TblProject_TblCategory" Association="Self.FK_TblProject_TblCategory">
             <End Role="TblCategory" EntitySet="TblCategory" />
@@ -181,7 +191,7 @@
           <Property Name="AboutId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Description" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
           <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="ImageUrl" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblAdress">
           <Key>
@@ -200,7 +210,7 @@
           <Property Name="BannerId" Type="Int32" Nullable="false" />
           <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Description" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
-          <Property Name="ImageUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblCategory">
           <Key>
@@ -228,14 +238,14 @@
           <Property Name="FeatureId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="FeatureTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="FeatureSubtitle" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="FeatureImageUrl" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="FeatureImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblHobby">
           <Key>
             <PropertyRef Name="HobbyId" />
           </Key>
           <Property Name="HobbyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="IconUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IconUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Title" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblProfile">
@@ -255,7 +265,7 @@
           </Key>
           <Property Name="ProjectId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ProjectName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="ProjectImageUrl" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="ProjectImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="ProjectCategory" Type="Int32" />
           <NavigationProperty Name="TblCategory" Relationship="Self.FK_TblProject_TblCategory" FromRole="TblProject" ToRole="TblCategory" />
         </EntityType>
@@ -266,7 +276,7 @@
           <Property Name="ServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="IconUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IconUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblSkills">
           <Key>
@@ -286,7 +296,7 @@
           <Property Name="TestimonialName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="TestimonialTitle" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="TestimonialDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="TestimonialImageUrl" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="TestimonialImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_TblProject_TblCategory">
           <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
@@ -320,7 +330,17 @@
           </AssociationSet>
           <FunctionImport Name="GetLastSkillTitle" />
           <FunctionImport Name="GetLastSkillTitlee" ReturnType="Collection(String)" />
+          <EntitySet Name="TblSocialMedia" EntityType="DbPortfolioModel.TblSocialMedia" />
         </EntityContainer>
+        <EntityType Name="TblSocialMedia">
+          <Key>
+            <PropertyRef Name="SocialMedia_ID" />
+          </Key>
+          <Property Name="SocialMedia_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SocialMediaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SocialMediaIcon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SocialMediaUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -464,6 +484,16 @@
           </EntitySetMapping>
           <FunctionImportMapping FunctionImportName="GetLastSkillTitle" FunctionName="DbPortfolioModel.Store.GetLastSkillTitle" />
           <FunctionImportMapping FunctionImportName="GetLastSkillTitlee" FunctionName="DbPortfolioModel.Store.GetLastSkillTitlee" />
+          <EntitySetMapping Name="TblSocialMedia">
+            <EntityTypeMapping TypeName="DbPortfolioModel.TblSocialMedia">
+              <MappingFragment StoreEntitySet="TblSocialMedia">
+                <ScalarProperty Name="SocialMediaUrl" ColumnName="SocialMediaUrl" />
+                <ScalarProperty Name="SocialMediaIcon" ColumnName="SocialMediaIcon" />
+                <ScalarProperty Name="SocialMediaName" ColumnName="SocialMediaName" />
+                <ScalarProperty Name="SocialMedia_ID" ColumnName="SocialMedia_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

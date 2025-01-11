@@ -14,7 +14,6 @@ namespace AcunMedyaAkademiPortfolio.Controllers
         {
             return View();
         }
-
         public PartialViewResult HeadPartial()
         {
             return PartialView();
@@ -43,6 +42,50 @@ namespace AcunMedyaAkademiPortfolio.Controllers
             var skillcount = db.TblSkills.ToList().Count();
             ViewBag.SkillCount = skillcount;
             return PartialView();
+        }
+        //.
+        public PartialViewResult PartialProfile()
+        {
+            var values = db.TblProfile.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult PartialHobby()
+        {
+            var values = db.TblHobby.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialService()
+        {
+            var values = db.TblService.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialProject()
+        {
+            var values = db.TblProject.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialTestimonial()
+        {
+            var values = db.TblTestimonial.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialAddress()
+        {
+            var values = db.TblAdress.ToList();
+            return PartialView(values);
+        }
+        [HttpGet]
+        public PartialViewResult PartialContact()
+        {
+            return PartialView();
+        }
+        [HttpPost]
+        public ActionResult PartialContact(TblContact p)
+        {
+            db.TblContact.Add(p);
+            db.SaveChanges();
+            return RedirectToAction("Index", "Default");
         }
     }
 }

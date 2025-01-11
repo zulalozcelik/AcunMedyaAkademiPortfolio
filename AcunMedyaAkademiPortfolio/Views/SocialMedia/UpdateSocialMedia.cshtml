@@ -1,0 +1,20 @@
+﻿@model AcunMedyaAkademiPortfolio.Models.TblSocialMedia
+@{
+    ViewBag.Title = "UpdateSocialMedia";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Update Social Media</h2>
+
+<form method="post">
+    <label>Social Media ID</label>
+    <input type="text" class="form-control" name="SocialMedia_ID" value="@Model.SocialMedia_ID" />
+    <label>Social Media Name</label>
+    <input type="text" class="form-control" name="SocialMediaName" value="@Model.SocialMediaName" />
+    <label>Social Media Icon</label>
+    <input type="text" class="form-control" name="SocialMediaIcon" value="@Model.SocialMediaIcon" />
+    <label>Social Media Url</label>
+    <input type="text" class="form-control" name="SocialMediaUrl" value="@Model.SocialMediaUrl" />
+    <br />
+    <button class="btn btn-info">Update Social Media</button>
+</form>
