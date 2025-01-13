@@ -1,0 +1,19 @@
+﻿@model AcunMedyaAkademiPortfolio.Models.TblProject
+@{
+    ViewBag.Title = "UpdateProject";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>UpdateProject</h2>
+
+<form method="post">
+    <label>Project Id</label>
+    <input type="text" class="form-control" name="AboutId" value="@Model.ProjectId" />
+    <label>Project Name</label>
+    <input type="text" class="form-control" name="Title" value="@Model.ProjectName" />
+    <label>Project Image</label>
+    <input type="text" class="form-control" name="Description" value="@Model.ProjectImageUrl" />
+    <label>Category</label>
+    <input type="text" class="form-control" name="ImageUrl" value="@Model.ProjectCategory" />
+    <button class="btn btn-info">Update Project</button>
+</form>

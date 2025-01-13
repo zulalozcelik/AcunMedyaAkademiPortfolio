@@ -594,6 +594,18 @@
     <Content Include="Views\SocialMedia\CreateSocialMedia.cshtml" />
     <Content Include="Views\SocialMedia\UpdateSocialMedia.cshtml" />
     <Content Include="Views\SocialMedia\Index.cshtml" />
+    <Content Include="Views\Category\CreateCategory.cshtml" />
+    <Content Include="Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Views\Project\UpdateProject.cshtml" />
+    <Content Include="Views\Project\CreateProject.cshtml" />
+    <Content Include="Views\Default\PartialAddress.cshtml" />
+    <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Default\PartialTestimonial.cshtml" />
+    <Content Include="Views\Default\PartialProject.cshtml" />
+    <Content Include="Views\Default\PartialService.cshtml" />
+    <Content Include="Views\Default\PartialHobby.cshtml" />
+    <Content Include="Views\Default\PartialProfile.cshtml" />
+    <Content Include="Views\Default\PartialSocialmedia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

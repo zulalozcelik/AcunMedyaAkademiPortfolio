@@ -1,0 +1,7 @@
+﻿﻿@model List<AcunMedyaAkademiPortfolio.Models.TblSocialMedia>
+<ul class="ftco-footer-social list-unstyled mt-2">
+    @foreach (var item in Model)
+    {
+        <li class="ftco-animate"><a href="@item.SocialMediaUrl"><span><img src="@item.SocialMediaIcon" style="width:30px"</span></a></li>
+    }
+</ul>
