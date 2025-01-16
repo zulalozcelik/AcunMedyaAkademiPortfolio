@@ -606,6 +606,7 @@
     <Content Include="Views\Default\PartialHobby.cshtml" />
     <Content Include="Views\Default\PartialProfile.cshtml" />
     <Content Include="Views\Default\PartialSocialmedia.cshtml" />
+    <Content Include="Views\Default\PartialScript.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

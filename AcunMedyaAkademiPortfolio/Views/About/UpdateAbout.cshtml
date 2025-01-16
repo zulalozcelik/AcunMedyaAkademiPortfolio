@@ -4,16 +4,16 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>UpdateAbout</h2>
+<h2>Update About</h2>
 
 <form method="post">
-    <label>Hakkında Id'si'</label>
+    <label>About Id</label>
     <input type="text" class="form-control" name="AboutId" value="@Model.AboutId" />
-    <label>Hakkında Başlığı</label>
+    <label>About Title</label>
     <input type="text" class="form-control" name="Title" value="@Model.Title" />
-    <label>Hakkında Açıklaması</label>
+    <label>About Description</label>
     <input type="text" class="form-control" name="Description" value="@Model.Description" />
-    <label>Hakkında Resmi</label>
+    <label>About Image</label>
     <input type="text" class="form-control" name="ImageUrl" value="@Model.ImageUrl" />
-    <button class="btn btn-info">Hakkındayı Kaydet</button>
+    <button class="btn btn-info"> Update About</button>
 </form>

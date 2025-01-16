@@ -20,7 +20,9 @@
                 <td>@item.BannerId</td>
                 <td>@item.Title</td>
                 <td>@item.Description</td>
-                <td>@item.ImageUrl</td>
+                <td align="center">
+                    <img src="@item.ImageUrl" style="width:150px" />
+                </td>
                 <td><a href="/Banner/UpdateBanner/@item.BannerId" class="btn btn-warning"> Güncelle</a></td>
                 <td><a href="/Banner/DeleteBanner/@item.BannerId" class="btn btn-danger"> Sil</a></td>
             </tr>

@@ -98,5 +98,9 @@ namespace AcunMedyaAkademiPortfolio.Controllers
             var values = db.TblSocialMedia.ToList();
             return PartialView(values);
         }
+        public PartialViewResult PartialScript()
+        {
+            return PartialView();
+        }
     }
 }

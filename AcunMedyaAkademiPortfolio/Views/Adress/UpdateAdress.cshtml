@@ -4,18 +4,18 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Adres Güncelleme</h2>
+<h2> Update Address</h2>
 
 <form method="post">
-    <label>Adres Id'si'</label>
+    <label>Address Id</label>
     <input type="text" class="form-control" name="AdressId" value="@Model.AdressId" />
-    <label>Adres</label>
+    <label>Address</label>
     <input type="text" class="form-control" name="Adress" value="@Model.Adress" />
-    <label>Telefon Numarası</label>
+    <label>Phone Number</label>
     <input type="text" class="form-control" name="Phone" value="@Model.Phone" />
     <label>Email</label>
     <input type="text" class="form-control" name="Email" value="@Model.Email" />
     <label>Website</label>
-    <input type="text" class="form-control" name="Email" value="@Model.Website" />
+    <input type="text" class="form-control" name="Website" value="@Model.Website" />
     <button class="btn btn-info">Adresi Kaydet</button>
 </form>
