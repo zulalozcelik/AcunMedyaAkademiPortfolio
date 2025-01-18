@@ -8,11 +8,11 @@
     <table class="table table-bordered">
         <tr>
             <th>#</th>
-            <th>Başlık</th>
-            <th>Açıklama</th>
-            <th>Resim</th>
-            <th>Güncelle</th>
-            <th>Sil</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Image </th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
         @foreach (var item in Model)
         {
@@ -23,11 +23,11 @@
                 <td align="center">
                     <img src="@item.ImageUrl" style="width:150px" />
                 </td>
-                <td><a href="/Banner/UpdateBanner/@item.BannerId" class="btn btn-warning"> Güncelle</a></td>
-                <td><a href="/Banner/DeleteBanner/@item.BannerId" class="btn btn-danger"> Sil</a></td>
+                <td><a href="/Banner/UpdateBanner/@item.BannerId" class="btn btn-warning"> Update</a></td>
+                <td><a href="/Banner/DeleteBanner/@item.BannerId" class="btn btn-danger"> Delete</a></td>
             </tr>
         }
 
     </table>
 
-    <td><a href="/Banner/CreateBanner/"class="btn btn-success">Yeni Afiş Ekle</a></td>
+    <td><a href="/Banner/CreateBanner/"class="btn btn-success">Add new Banner</a></td>

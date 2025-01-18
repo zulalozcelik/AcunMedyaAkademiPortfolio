@@ -7,11 +7,11 @@
     <table class="table table-bordered">
         <tr>
             <th>#</th>
-            <th>İsim</th>
-            <th>Doğum Tarihi</th>
-            <th>Adres</th>
+            <th>Name</th>
+            <th>Birthday</th>
+            <th>Address</th>
             <th>Email</th>
-            <th>Telefon Numarası</th>
+            <th>PhoneNumber</th>
         </tr>
         @foreach (var item in Model)
         {
@@ -22,11 +22,11 @@
                 <td>@item.Adress</td>
                 <td>@item.Email</td>
                 <td>@item.PhoneNumber</td>
-                <td><a href="/Profile/CreateProfile/@item.ProfileId" class="btn btn-warning">Güncelle</a></td>
-                <td><a href="/Profile/DeleteProfile/@item.ProfileId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Profile/CreateProfile/@item.ProfileId" class="btn btn-warning">Update</a></td>
+                <td><a href="/Profile/DeleteProfile/@item.ProfileId" class="btn btn-danger">Delete</a></td>
             </tr>
         }
     </table>
-    <td><a href="/Profile/CreateProfile/" class="btn btn-success">Yeni Profil Ekle</a></td>
+    <td><a href="/Profile/CreateProfile/" class="btn btn-success">Add New Profile</a></td>
 
 

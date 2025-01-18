@@ -11,8 +11,8 @@
             <th>Project Name</th>
             <th>Project Image</th>
             <th>Category</th>
-            <th>Güncelle</th>
-            <th>Sil</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
         @foreach (var item in Model)
         {
@@ -23,8 +23,8 @@
                     <img src="@item.ProjectImageUrl" style="width:150px" />
                 </td>
                 <td>@item.ProjectCategory</td>
-                <td><a href="/Project/UpdateProject/@item.ProjectId" class="btn btn-warning"> Güncelle</a></td>
-                <td><a href="/Project/DeleteProject/@item.ProjectId" class="btn btn-danger"> Sil</a></td>
+                <td><a href="/Project/UpdateProject/@item.ProjectId" class="btn btn-warning"> Update</a></td>
+                <td><a href="/Project/DeleteProject/@item.ProjectId" class="btn btn-danger"> Delete</a></td>
             </tr>
         }
 

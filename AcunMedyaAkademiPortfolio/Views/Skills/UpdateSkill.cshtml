@@ -4,19 +4,19 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>UpdateSkill</h2>
+<h2>Update Skill</h2>
 
 <form method="post">
-    <label>Yetenek Id'si'</label>
+    <label>Skill Id</label>
     <input type="text" class="form-control" name="SkillId" value="@Model.SkillId"/>
-    <label>Yetenek Adı</label>
+    <label>Title</label>
     <input type="text" class="form-control" name="Title" value="@Model.Title"/>
-    <label>Yetenek Değeri</label>
-    <input type="text" class="form-control" name="Valule" value="@Model.Value" />
-    <label>Geçen Haftalık Değeri</label>
+    <label>Value</label>
+    <input type="text" class="form-control" name="Value" value="@Model.Value" />
+    <label>Last Week Value</label>
     <input type="text" class="form-control" name="LastWeekValue" value="@Model.LastWeekValue"/>
-    <label>Geçen Haftalık Değeri</label>
+    <label>Last Month Value</label>
     <input type="text" class="form-control" name="LastMonthValue" value="@Model.LastMonthValue"/>
     <br />
-    <button class="btn btn-info">Yeteneği Kaydet</button>
+    <button class="btn btn-info">Update Skill</button>
 </form>

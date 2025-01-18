@@ -7,7 +7,7 @@
     <table class="table table-bordered">
         <tr>
             <th>#</th>
-            <th>Başlık</th>
+            <th>Title</th>
             <th>Icon url</th>
         </tr>
         @foreach (var item in Model)
@@ -18,11 +18,11 @@
                 <td align="center">
                     <img src="@item.IconUrl" style="width:150px" />
                 </td>
-                <td><a href="/Hobby/CreateHobby/@item.HobbyId" class="btn btn-warning">Güncelle</a></td>
-                <td><a href="/Hobby/DeleteHobby/@item.HobbyId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Hobby/CreateHobby/@item.HobbyId" class="btn btn-warning">Update</a></td>
+                <td><a href="/Hobby/DeleteHobby/@item.HobbyId" class="btn btn-danger">Delete</a></td>
             </tr>
         }
     </table>
-    <td><a href="/Hobby/CreateHobby/" class="btn btn-success">Yeni Hobi Ekle</a></td>
+    <td><a href="/Hobby/CreateHobby/" class="btn btn-success">Add New Hobby</a></td>
 
 

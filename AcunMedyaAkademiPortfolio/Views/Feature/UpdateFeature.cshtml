@@ -3,16 +3,16 @@
     ViewBag.Title = "UpdateFeature";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-<h2>Özellik Güncelleme</h2>
+<h2>Update Feature</h2>
 
 <form method="post">
-    <label>Özellik ID</label>
+    <label>Feature ID</label>
     <input type="text" class="form-control" name="FeatureId" value="@Model.FeatureId" />
-    <label>Başlık</label>
+    <label>Title</label>
     <input type="text" class="form-control" name="FeatureTitle" value="@Model.FeatureTitle" />
-    <label>Alt Başlık</label>
+    <label>Subtitle</label>
     <input type="text" class="form-control" name="FeatureSubtitle" value="@Model.FeatureSubtitle" />
-    <label>Resim</label>
+    <label>Image</label>
     <input type="text" class="form-control" name="FeatureImageUrl" value="@Model.FeatureImageUrl" />
-    <button class="btn btn-info">Özelliği Kaydet</button>
+    <button class="btn btn-info">Update Feature</button>
 </form>

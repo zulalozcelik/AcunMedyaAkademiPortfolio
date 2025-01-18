@@ -5,22 +5,22 @@
 }
 
 
-<h2> Referans Güncelleme</h2>
+<h2>Update Testimonial</h2>
 <form method="post">
-    <label>Referans Id'si'</label>
+    <label>Testimonial Id</label>
     @Html.TextBoxFor(x => x.TestimonialId, new { @class = "form-control" })
     <br />
-    <label>Referans ismi</label>
+    <label>Testimonial Name</label>
     @Html.TextBoxFor(x => x.TestimonialName, new { @class = "form-control" })
     <br />
-    <label>Referans Mesleği</label>
+    <label>Testimonial Profession</label>
     @Html.TextBoxFor(x => x.TestimonialTitle, new { @class = "form-control" })
     <br />
-    <label>Referans açıklaması</label>
+    <label>Description</label>
     @Html.TextBoxFor(x => x.TestimonialDescription, new { @class = "form-control" })
     <br />
-    <label>Referans resmi</label>
+    <label>Image</label>
     @Html.TextBoxFor(x => x.TestimonialImageUrl, new { @class = "form-control" })
     <br />
-    <button class="btn btn-info">Referansı Güncelle</button>
+    <button class="btn btn-info">Update Testimonial</button>
 </form>

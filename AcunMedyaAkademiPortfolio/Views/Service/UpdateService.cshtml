@@ -4,14 +4,14 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Servis Güncelleme</h2>
+<h2>Update Service</h2>
 
 <form method="post">
-    <label>Servis ID</label>
+    <label>Servisce ID</label>
     <input type="text" class="form-control" name="ProfileId" value="@Model.ServiceId" />
-    <label>Başlık</label>
+    <label>Title</label>
     <input type="text" class="form-control" name="Title" value="@Model.Title" />
-    <label>Açıklama</label>
+    <label>Description</label>
     <input type="text" class="form-control" name="Description" value="@Model.Description" />
     <label>IconUrl</label>
     <input type="text" class="form-control" name="IconUrl" value="@Model.IconUrl" />

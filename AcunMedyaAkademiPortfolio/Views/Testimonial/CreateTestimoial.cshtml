@@ -4,19 +4,19 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Yeni Referans Ekleme</h2>
+<h2>Add New Testimonial</h2>
 <form method="post">
-    <label>Referans ismi</label>
+    <label>Testimonial Name</label>
     @Html.TextBoxFor(x => x.TestimonialName, new { @class = "form-control" })
     <br />
-    <label>Referans Mesleği</label>
+    <label>Testimonials Profession</label>
     @Html.TextBoxFor(x => x.TestimonialTitle, new { @class = "form-control" })
     <br />
-    <label>Referans açıklaması</label>
+    <label>Description </label>
     @Html.TextBoxFor(x => x.TestimonialDescription, new { @class = "form-control" })
     <br />
-    <label>Referans resmi</label>
+    <label>Image</label>
     @Html.TextBoxFor(x => x.TestimonialImageUrl, new { @class = "form-control" })
     <br />
-    <button class="btn btn-info">Yeteneği Kaydet</button>
+    <button class="btn btn-info">Add New Testimonial</button>
 </form>

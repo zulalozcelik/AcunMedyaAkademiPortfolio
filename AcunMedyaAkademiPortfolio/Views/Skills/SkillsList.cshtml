@@ -7,12 +7,10 @@
 <table class="table table-bordered">
     <tr>
         <th>#</th>
-        <th>Başlık</th>
-        <th>Değeri</th>
-        <th>Geçen Hafta</th>
-        <th>Geçen Ay</th>
-        <th>Güncelle</th>
-        <th>Sil</th>
+        <th>Title</th>
+        <th>Value</th>
+        <th>Last Week</th>
+        <th>Last Month</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -22,9 +20,9 @@
             <td>@item.Value</td>
             <td>@item.LastWeekValue</td>
             <td>@item.LastMonthValue</td>
-            <td><a href="/Skills/UpdateSkill/@item.SkillId" class="btn btn-warning">Güncelle</a></td>
-            <td><a href="/Skills/DeleteSkill/@item.SkillId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Skills/UpdateSkill/@item.SkillId" class="btn btn-warning">Update</a></td>
+            <td><a href="/Skills/DeleteSkill/@item.SkillId" class="btn btn-danger">Delete</a></td>
         </tr>
     }
     </table>
-<a href="/Skills/CreateSkill"class="btn btn-success">Yeni yetenek ekle</a>
+<a href="/Skills/CreateSkill"class="btn btn-success">Add New Skill</a>

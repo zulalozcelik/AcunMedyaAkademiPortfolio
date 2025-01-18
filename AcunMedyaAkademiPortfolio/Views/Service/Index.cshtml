@@ -7,8 +7,8 @@
     <table class="table table-bordered">
         <tr>
             <th>#</th>
-            <th>Başlık</th>
-            <th>Açıklama</th>
+            <th>Title</th>
+            <th>Description</th>
             <th>IconUrl</th>
         </tr>
         @foreach (var item in Model)
@@ -20,10 +20,10 @@
                 <td align="center">
                     <img src="@item.IconUrl" style="width:150px" />
                 </td>
-                <td><a href="/Service/CreateService/@item.ServiceId" class="btn btn-warning">Güncelle</a></td>
-                <td><a href="/Service/DeleteService/@item.ServiceId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Service/CreateService/@item.ServiceId" class="btn btn-warning">Update</a></td>
+                <td><a href="/Service/DeleteService/@item.ServiceId" class="btn btn-danger">Delete</a></td>
             </tr>
         }
     </table>
-    <td><a href="/Service/CreateService/" class="btn btn-success">Yeni Servise Ekle</a></td>
+    <td><a href="/Service/CreateService/" class="btn btn-success">Add new Service</a></td>
 

@@ -6,9 +6,9 @@
     <table class="table table-bordered">
         <tr>
             <th>#</th>
-            <th>Başlık</th>
-            <th>Alt Başlık</th>
-            <th>Resim url</th>
+            <th>Title</th>
+            <th>Subtitle</th>
+            <th>Image URL</th>
         </tr>
         @foreach (var item in Model)
         {
@@ -19,9 +19,9 @@
                 <td align="center">
                     <img src="@item.FeatureImageUrl" style="width:150px" />
                 </td>
-                <td><a href="/Feature/UpdateFeature/@item.FeatureId" class="btn btn-warning">Güncelle</a></td>
-                <td><a href="/Feature/DeleteFeature/@item.FeatureId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Feature/UpdateFeature/@item.FeatureId" class="btn btn-warning">Update</a></td>
+                <td><a href="/Feature/DeleteFeature/@item.FeatureId" class="btn btn-danger">Delete</a></td>
             </tr>
         }
     </table>
-    <td><a href="/Feature/CreateFeature" class="btn btn-success">Yeni Özellik Ekle</a></td>
+    <td><a href="/Feature/CreateFeature" class="btn btn-success">Add New Feature</a></td>
