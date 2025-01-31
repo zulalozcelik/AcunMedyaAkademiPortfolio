@@ -3,7 +3,7 @@
         ViewBag.Title = "Index";
         Layout = "~/Views/AdminLayout/Index.cshtml";
     }
-
+    <h2>Profile</h2>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
@@ -12,6 +12,8 @@
             <th>Address</th>
             <th>Email</th>
             <th>PhoneNumber</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
         @foreach (var item in Model)
         {
@@ -22,7 +24,7 @@
                 <td>@item.Adress</td>
                 <td>@item.Email</td>
                 <td>@item.PhoneNumber</td>
-                <td><a href="/Profile/CreateProfile/@item.ProfileId" class="btn btn-warning">Update</a></td>
+                <td><a href="/Profile/UpdateProfile/@item.ProfileId" class="btn btn-warning">Update</a></td>
                 <td><a href="/Profile/DeleteProfile/@item.ProfileId" class="btn btn-danger">Delete</a></td>
             </tr>
         }

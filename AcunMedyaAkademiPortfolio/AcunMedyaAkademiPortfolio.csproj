@@ -298,6 +298,8 @@
     <Content Include="Template\clyde-master\images\work-6.jpg" />
     <Content Include="Template\clyde-master\images\work-7.jpg" />
     <Content Include="Template\clyde-master\images\work-8.jpg" />
+    <Content Include="Template\clyde-master\images\z-web.jpg" />
+    <Content Include="Template\clyde-master\images\z-webb.jpg" />
     <Content Include="Template\clyde-master\index.html" />
     <Content Include="Template\clyde-master\js\aos.js" />
     <Content Include="Template\clyde-master\js\bootstrap.min.js" />
@@ -607,6 +609,8 @@
     <Content Include="Views\Default\PartialProfile.cshtml" />
     <Content Include="Views\Default\PartialSocialmedia.cshtml" />
     <Content Include="Views\Default\PartialScript.cshtml" />
+    <Content Include="Views\Contact\CreateContact.cshtml" />
+    <Content Include="Views\Contact\UpdateContact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

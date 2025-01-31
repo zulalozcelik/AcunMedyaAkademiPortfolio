@@ -3,12 +3,15 @@
         ViewBag.Title = "Index";
         Layout = "~/Views/AdminLayout/Index.cshtml";
     }
+    <h2>Feature</h2>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
             <th>Title</th>
             <th>Subtitle</th>
             <th>Image URL</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
         @foreach (var item in Model)
         {

@@ -3,18 +3,20 @@
         ViewBag.Title = "Index";
         Layout = "~/Views/AdminLayout/Index.cshtml";
     }
-
+    <h2>Hobby</h2>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
             <th>Title</th>
             <th>Icon url</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
         @foreach (var item in Model)
         {
             <tr>
                 <td>@item.HobbyId</td>
-                <td>@item.Title</td>            
+                <td>@item.Title</td>
                 <td align="center">
                     <img src="@item.IconUrl" style="width:150px" />
                 </td>

@@ -50,7 +50,7 @@ namespace AcunMedyaAkademiPortfolio.Controllers
             value.LastWeekValue = p.LastWeekValue;
             value.LastMonthValue = p.LastMonthValue;
             db.SaveChanges();
-            return RedirectToAction("SkillList");
+            return RedirectToAction("SkillsList");
         }
     }
 }

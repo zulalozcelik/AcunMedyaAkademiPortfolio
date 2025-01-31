@@ -9,14 +9,16 @@
         <tr>
             <th>#</th>
             <th>Name</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
         @foreach (var item in Model)
         {
             <tr>
                 <td>@item.CategoryId</td>
                 <td>@item.CategoryName</td>
-                <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-warning"> Güncelle</a></td>
-                <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger"> Sil</a></td>
+                <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-warning"> Update</a></td>
+                <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger"> Delete</a></td>
             </tr>
         }
 

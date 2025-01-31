@@ -3,12 +3,15 @@
         ViewBag.Title = "Index";
         Layout = "~/Views/AdminLayout/Index.cshtml";
     }
+    <h2>Social Media</h2>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
             <th>Social Media Name</th>
             <th>Social Media Icon</th>
             <th>Social Media Url</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
         @foreach (var item in Model)
         {
@@ -16,7 +19,7 @@
                 <td>@item.SocialMedia_ID</td>
                 <td>@item.SocialMediaName</td>
                 <td align="center">
-                    <img src="@item.SocialMediaIcon" style="width:150px" />
+                    <img src="@item.SocialMediaIcon" style="width:50px" />
                 </td>
                 <td>@item.SocialMediaUrl</td>
                 <td><a href="/SocialMedia/UpdateSocialMedia/@item.SocialMedia_ID" class="btn btn-warning">Update</a></td>

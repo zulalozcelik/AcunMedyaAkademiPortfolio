@@ -3,7 +3,7 @@
     ViewBag.Title = "SkillsList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-
+<h2>Skill</h2>
 <table class="table table-bordered">
     <tr>
         <th>#</th>
@@ -11,6 +11,8 @@
         <th>Value</th>
         <th>Last Week</th>
         <th>Last Month</th>
+        <th>Update</th>
+        <th>Delete</th>
     </tr>
     @foreach (var item in Model)
     {

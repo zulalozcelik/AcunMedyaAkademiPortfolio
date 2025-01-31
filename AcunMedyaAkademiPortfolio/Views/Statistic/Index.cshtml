@@ -4,10 +4,12 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-
-<div class="alert alert-danger">kategori sayısı=@ViewBag.categoryCount</div>
-<div class="alert alert-warning">proje sayısı=@ViewBag.projejctCount</div>
-<div class="alert alert-success">yetenek sayısı=@ViewBag.skillsCount</div>
-<div class="alert alert-dark">Ortalama yetenek puanı=@ViewBag.skillAvgValue</div>
-<div class="alert alert-primary">Son Eklenen Yetenek = @ViewBag.lastSkillTitleName</div>
-<div class="alert alert-info">Asp .Net MVC proje sayısı = @ViewBag.mvcCategoryProjectCount</div>
+<div class="alert alert-primary">Number of Categories = @ViewBag.categoryCount</div>
+<div class="alert alert-secondary">Number of Projects = @ViewBag.projectCount</div>
+<div class="alert alert-success">Number of Skills  = @ViewBag.skillsCount</div>
+<div class="alert alert-danger">Average Skill Score = @ViewBag.skillsAvgValue</div>
+<div class="alert alert-warning">Number of Abouts = @ViewBag.AboutCount</div>
+<div class="alert alert-info">Lastly Added Skill = @ViewBag.lastSkillTitleName</div>
+<div class="alert alert-light">Number of Testimonials = @ViewBag.TestimonialCount</div>
+<div class="alert alert-dark">Number of Services = @ViewBag.ServiceCount</div>
+<div class="alert alert-custom">Number of Features = @ViewBag.FeatureCount</div>

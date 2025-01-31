@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "CreateContact";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Create Contact</h2>
+
+<h3>Add new Service</h3>
+<form method="post">
+    <label>Name</label>
+    <input type="text" class="form-control" name="Name" />
+
+    <label>Email</label>
+    <input type="text" class="form-control" name="Email" />
+
+    <label>Subject</label>
+    <input type="text" class="form-control" name="Subject" />
+
+    <label>Description</label>
+    <input type="text" class="form-control" name="Description" />
+
+    <label>CreateDate</label>
+    <input type="text" class="form-control" name="CreateDate" />
+
+    <br /><br />
+    <button class="btn btn-info">Add new Contact</button>
+</form>
