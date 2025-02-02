@@ -31,8 +31,8 @@
           <Property Name="AdressId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Adress" Type="varchar" MaxLength="50" />
           <Property Name="Phone" Type="varchar" MaxLength="20" />
-          <Property Name="Email" Type="varchar" MaxLength="30" />
-          <Property Name="Website" Type="varchar" MaxLength="30" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Website" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="TblBanner">
           <Key>
@@ -133,7 +133,7 @@
           <Property Name="TestimonialId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TestimonialName" Type="varchar" MaxLength="30" />
           <Property Name="TestimonialTitle" Type="varchar" MaxLength="30" />
-          <Property Name="TestimonialDescription" Type="varchar" MaxLength="100" />
+          <Property Name="TestimonialDescription" Type="varchar(max)" />
           <Property Name="TestimonialImageUrl" Type="varchar(max)" />
         </EntityType>
         <Association Name="FK_TblProject_TblCategory">
@@ -200,8 +200,8 @@
           <Property Name="AdressId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Adress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="Website" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Website" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblBanner">
           <Key>
@@ -295,7 +295,7 @@
           <Property Name="TestimonialId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TestimonialName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="TestimonialTitle" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="TestimonialDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TestimonialDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="TestimonialImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_TblProject_TblCategory">
