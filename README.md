@@ -37,9 +37,9 @@ This is a mid-level personal portfolio website built using the **ASP.NET MVC fra
 
 
 ### Admin Panel
-![Ekran görüntüsü 2025-02-05 133333](https://github.com/user-attachments/assets/a3bc1bb4-6538-42fd-a9af-4f7857458625)
-![Ekran görüntüsü 2025-02-05 133433](https://github.com/user-attachments/assets/56fdd4fe-b189-4b0c-9977-3a7a3fb399ad)
-
+![Ekran görüntüsü 2025-02-05 150652](https://github.com/user-attachments/assets/8767d8aa-73e0-441b-a280-8195877e267b)
+![Ekran görüntüsü 2025-02-05 150529](https://github.com/user-attachments/assets/d7a9e7eb-b03d-42a4-8da8-3184d9a56804)
+![Ekran görüntüsü 2025-02-05 150602](https://github.com/user-attachments/assets/94566400-89d6-440c-9dad-e2c3a3896086)
 
 ### Database Section
 
