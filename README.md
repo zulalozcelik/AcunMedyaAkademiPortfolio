@@ -13,10 +13,16 @@ This is a mid-level personal portfolio website built using the **ASP.NET MVC fra
 
 ## Technologies Used
 
-- **ASP.NET MVC** – Model-View-Controller architecture
-- **Entity Framework 6.0** – ORM for database management
-- **Database First Approach** – Pre-defined database schema
-- **Microsoft SQL Server (MSSQL)** – Relational database system
+**ASP.Net MVC
+**Linq Sorgular
+**Layout Kontrolü
+**Db First yaklaşımı
+**Temel CRUD İşlemleri
+**Partial View Kullanımı
+**Model, View, Controller Yapıları
+**Entity Framework Sorguları
+**Bootstrap Kullanımı
+**Microsoft SQL Server
 
 ## Screenshots
 
