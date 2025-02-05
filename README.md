@@ -11,18 +11,18 @@ This is a mid-level personal portfolio website built using the **ASP.NET MVC fra
 - **Modern UI**: A responsive and stylish design.
 - **Database Integration**: Uses **Entity Framework 6.0** and **Microsoft SQL Server**.
 
-## Technologies Used
+## Technologies & Concepts Used
 
-**ASP.Net MVC**
-**Linq Sorgular**
-**Layout Kontrolü**
-**Db First yaklaşımı**
-**Temel CRUD İşlemleri**
-**Partial View Kullanımı**
-**Model, View, Controller Yapıları**
-**Entity Framework Sorguları**
-**Bootstrap Kullanımı**
-**Microsoft SQL Server**
+- **ASP.NET MVC** – Model-View-Controller architecture
+- **LINQ Queries** – Data retrieval and manipulation
+- **Layout Management** – Dynamic page structuring
+- **Database First Approach** – Pre-defined database schema
+- **Basic CRUD Operations** – Create, Read, Update, and Delete functionality
+- **Partial View Usage** – Reusable UI components
+- **Model, View, Controller (MVC) Structures** – Organized application architecture
+- **Entity Framework Queries** – ORM for database management
+- **Bootstrap Framework** – Responsive front-end design
+- **Microsoft SQL Server** – Relational database system
 
 ## Screenshots
 
