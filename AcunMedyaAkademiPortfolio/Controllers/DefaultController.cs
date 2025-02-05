@@ -32,7 +32,6 @@ namespace AcunMedyaAkademiPortfolio.Controllers
             var values = db.TblAbout.ToList();
             return PartialView(values);
         }
-        //********************************
         public PartialViewResult PartialSkills()
         {
             var values = db.TblSkills.ToList();
@@ -87,11 +86,16 @@ namespace AcunMedyaAkademiPortfolio.Controllers
             return PartialView();
         }
         [HttpPost]
-        public ActionResult PartialContact(TblContact p)
+        public PartialViewResult PartialContact(TblContact y)
         {
-            db.TblContact.Add(p);
-            db.SaveChanges();
-            return RedirectToAction("Index", "Default");
+            if (ModelState.IsValid)
+            {
+                db.TblContact.Add(y);
+                db.SaveChanges();
+
+                ViewBag.RedirectUrl = Url.Action("Index", "Default");
+            }
+            return PartialView();
         }
         public PartialViewResult PartialSocialmedia()
         {
@@ -101,6 +105,17 @@ namespace AcunMedyaAkademiPortfolio.Controllers
         public PartialViewResult PartialScript()
         {
             return PartialView();
+        }
+
+        public PartialViewResult PartialFooter1()
+        {
+            var values = db.TblService.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialFooter2()
+        {
+            var values = db.TblAdress.ToList();
+            return PartialView(values);
         }
     }
 }

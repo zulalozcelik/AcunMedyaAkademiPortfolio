@@ -612,6 +612,8 @@
     <Content Include="Views\Default\PartialScript.cshtml" />
     <Content Include="Views\Contact\CreateContact.cshtml" />
     <Content Include="Views\Contact\UpdateContact.cshtml" />
+    <Content Include="Views\Default\PartialFooter1.cshtml" />
+    <Content Include="Views\Default\PartialFooter2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
