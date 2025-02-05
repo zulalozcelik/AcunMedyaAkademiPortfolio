@@ -27,14 +27,13 @@ This is a mid-level personal portfolio website built using the **ASP.NET MVC fra
 ## Screenshots
 
 ### Home Page
-![Ekran Görüntüsü (20)](https://github.com/user-attachments/assets/20e6cd9f-4674-4ad6-a735-671b531b18b2)
-![Ekran Görüntüsü (20)](https://github.com/user-attachments/assets/c73706c6-7ad8-417c-a8cd-b5ae57c669a4)
-![Ekran Görüntüsü (20)](https://github.com/user-attachments/assets/e01e722f-3815-48e7-802f-6b20752a80c0)
-![Ekran Görüntüsü (20)](https://github.com/user-attachments/assets/112a3301-cb0c-4b11-aba6-1283d33446b4)
-![Ekran görüntüsü 2025-02-05 133105](https://github.com/user-attachments/assets/ac1fe9e3-ab5b-4f8c-bf7d-1f6a55fdd8fc)
-![Ekran görüntüsü 2025-02-05 133105](https://github.com/user-attachments/assets/0f10da0e-c8c5-4ab8-8c42-533934bba4d9)
-![Ekran görüntüsü 2025-02-05 133105](https://github.com/user-attachments/assets/cc5ef2b4-9fbe-4075-a443-0d509619be82)
-
+![Ekran Görüntüsü (20)](https://github.com/user-attachments/assets/66daeb16-2f86-4f45-94e8-6136ac033aea)
+![Ekran Görüntüsü (20)](https://github.com/user-attachments/assets/935445ec-6553-4c32-9149-bd04b8038843)
+![Ekran Görüntüsü (20)](https://github.com/user-attachments/assets/abaaf0b2-1923-4ebd-8403-5ba47712255b)
+![Ekran Görüntüsü (20)](https://github.com/user-attachments/assets/939e992d-e85c-4f86-8931-047007ee86b0)
+![Ekran görüntüsü 2025-02-05 133032](https://github.com/user-attachments/assets/ea1ff30f-5952-4f07-aa99-d017da15ca94)
+![Ekran görüntüsü 2025-02-05 133032](https://github.com/user-attachments/assets/2e1197bb-c194-4973-b04c-3921401bd425)
+![Ekran görüntüsü 2025-02-05 133032](https://github.com/user-attachments/assets/6a9b217c-87e2-466b-a762-48ea229730a1)
 
 ### Admin Panel
 ![Ekran görüntüsü 2025-02-05 133333](https://github.com/user-attachments/assets/6976b532-3044-4f83-9dc9-0f72bae714f9)
