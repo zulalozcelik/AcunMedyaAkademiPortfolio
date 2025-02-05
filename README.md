@@ -13,16 +13,16 @@ This is a mid-level personal portfolio website built using the **ASP.NET MVC fra
 
 ## Technologies Used
 
-**ASP.Net MVC
-**Linq Sorgular
-**Layout Kontrolü
-**Db First yaklaşımı
-**Temel CRUD İşlemleri
-**Partial View Kullanımı
-**Model, View, Controller Yapıları
-**Entity Framework Sorguları
-**Bootstrap Kullanımı
-**Microsoft SQL Server
+**ASP.Net MVC**
+**Linq Sorgular**
+**Layout Kontrolü**
+**Db First yaklaşımı**
+**Temel CRUD İşlemleri**
+**Partial View Kullanımı**
+**Model, View, Controller Yapıları**
+**Entity Framework Sorguları**
+**Bootstrap Kullanımı**
+**Microsoft SQL Server**
 
 ## Screenshots
 
